@@ -10,10 +10,15 @@ body p{
 img{
     height:500px;
     width:500px;
-    border-radius: 500px;
+}
+@media(min-width:1024px){
+img{
+    height:auto;
+    width:100%;
+}
 }
 video{
-    height: 500px;
+    height: 100%;
     
 
 }
@@ -41,6 +46,14 @@ nav{
     flex-direction:row ;
     gap: 20px;
 }
+@media(min-width:1024px){
+    nav{
+    display:flex;
+    flex-direction: row;
+    gap:50px; 
+
+}
+}
 body #p1{
     font-style: italic;
 }
@@ -52,7 +65,23 @@ body #p2{
 }
 .grid{
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+}
+    
+@media (min-width:1024px){
+    .grid{
+        display:grid;
+        grid-template-columns:33% 33% 33%;
+}
+}
+.grid{
+    display: grid;
+     grid-template-columns:33% 33% 33%;
+}
+@media (max-width:1024px){
+    .grid{
+        display:grid;
+        
+}
 }
 
 
